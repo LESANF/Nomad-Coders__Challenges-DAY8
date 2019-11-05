@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
 
 body {
   height: 100%;
@@ -14,9 +15,9 @@ body {
 
 .bigframe {
   width: 35%;
-  background-color: black;
-  padding: 2%;
-  overflow: scroll;
+  background-color: #a9f5cf;
+  padding: 1%;
+  /* overflow: scroll; */
 }
 
 .airpods {
@@ -54,6 +55,9 @@ body {
   padding: 0px 25px;
 }
 
+.airpods__column .price {
+  font-weight: 700;
+}
 .evaluate .num {
   padding-left: 1px;
   opacity: 0.5;
@@ -67,37 +71,80 @@ body {
 .grey {
   color: #d7dfe1;
 }
+/*---------------------------------- end AirPods ----------------------------------*/
 
 .profile {
-  margin-top: 20px;
-  background-color: white;
-  border-radius: 11px;
   display: flex;
   flex-direction: column;
+  font-family: "McLaren", cursive;
+  align-items: center;
+  background-color: white;
+  border-radius: 11px;
+  margin-top: 20px;
 }
 
-.screen__top-img {
-  position: relative;
-}
-
-.screen__top-img img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.profile .profile__img,
+.profile .profile__img img {
   width: 100%;
   height: 100%;
-}
-
-/* .profile .screen__top img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
-} */
+}
 
-.profile .screen__bottom {
-  height: 100%;
+.my__profile {
+  position: absolute;
+  border: 5px solid white;
+  border-radius: 100%;
+  /* z-index: 5; */
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile__name {
+  font-size: 19px;
+  font-weight: 700;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.profile__des {
+  font-size: 14px;
+  opacity: 0.3;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.profile__button {
+  width: 80%;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile__button .profile__button-follow {
+  background-color: #299b84;
+  width: 40%;
+  height: 50px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__button .profile__button-Message {
+  background-color: #299b84;
+  width: 40%;
+  height: 50px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
