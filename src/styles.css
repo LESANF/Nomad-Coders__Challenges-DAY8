@@ -16,6 +16,7 @@ body {
   width: 35%;
   background-color: black;
   padding: 2%;
+  overflow: scroll;
 }
 
 .airpods {
@@ -65,4 +66,38 @@ body {
 
 .grey {
   color: #d7dfe1;
+}
+
+.profile {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen__top-img {
+  position: relative;
+}
+
+.screen__top-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .profile .screen__top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+} */
+
+.profile .screen__bottom {
+  height: 100%;
 }
